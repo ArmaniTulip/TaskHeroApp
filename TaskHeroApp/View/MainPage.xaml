@@ -4,7 +4,10 @@
              x:Class="TaskHeroApp.View.MainPage"
              xmlns:viewmodel="clr-namespace:TaskHeroApp.ViewModel"
              x:DataType="viewmodel:MainViewModel">
-
+    <ContentPage.BindingContext>
+        <x:DataTemplate x:DataType="model:TaskViewModel">            
+            </DataTemplate>
+    </ContentPage.BindingContext>
 
     <Grid RowDefinitions="100, Auto, *"
          ColumnDefinitions=".75*, .25*"
@@ -20,9 +23,9 @@
         <Entry Placeholder="Enter Task"
                Text="{Binding Text}"
                Grid.Row="1"/>
-
+        
         <Button Text="Add Task"
-                Command="{Binding AddCommand}" BackgroundColor="Blue"
+                Command="{Binding AddCommand}" BackgroundColor="{Binding ButtonColor}"
                 Grid.Row="1"
                 Grid.Column="1"/>
 
