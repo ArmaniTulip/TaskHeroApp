@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>TaskHeroApp</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<MauiIcon Include="Resources\AppIcon\Task Hero image.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiImage Include="Resources\Images\Task Hero image.png" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TaskHeroApp.ViewModel"
+             x:Class="TaskHeroApp.View.TaskDetailsPage">
+
+    <ContentPage.BindingContext>
+        <local:TaskDetailsPageViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Label Text="Task Details" FontSize="Large" />
+        <Entry Text="{Binding Text}" Placeholder="Enter task details" />
+        <DatePicker Date="{Binding DueDate}" />
+        <Button Text="Go Back" Command="{Binding GoBackCommand}" />
+    </StackLayout>
+</ContentPage>
